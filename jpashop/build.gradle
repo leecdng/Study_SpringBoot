@@ -8,6 +8,7 @@ group = 'jpabook'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+// lombok 때문에 생긴 설정
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
@@ -15,7 +16,7 @@ configurations {
 }
 
 repositories {
-	mavenCentral()
+	mavenCentral() // 여기서 라이브러리를 다운 받겠다는 설정
 }
 
 dependencies {
